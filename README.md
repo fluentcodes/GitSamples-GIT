@@ -1,4 +1,4 @@
-### [GitSamples-GIT](../../tree/master): Rebase 1A onto 1
+### [GitSamples-GIT](../../tree/master): Rebase 1A onto 1B
 
 #### prepare
     git checkout 1A
@@ -31,10 +31,9 @@
 
 output:
 
-    8b8b176 (HEAD -> merge-1B-into-1A) merge-1B-into-1A: init
-    c937225 (1B) 1B: init
-    3740c5c (1A) 1A: init
-    a8b83f8 (master) master: init
+    0cea9e7 (HEAD -> rebase-1A-1B) 1A: init
+    c937225 (origin/1B, 1B) 1B: init
+    a8b83f8 master: init
 
 #### status
     Nicht zusammengeführte Pfade:
@@ -42,5 +41,21 @@ output:
     (benutzen Sie "git add/rm <Datei>...", um die Auflösung zu markieren)
     von beiden hinzugefügt: file
 
+#### resolve
+Change the content of the file to A. 
+
+     git add .
+     git rebase --continute
+
+    [losgelöster HEAD 0cea9e7] 1A: init
+    1 file changed, 46 insertions(+)
+    create mode 100644 README.md
+    Erfolgreich Rebase ausgeführt und refs/heads/rebase-1A-1B aktualisiert.
+
 #### Related Branches
 * [merge-1B-into-1A](../../tree/merge-1B-into-1A)
+
+#### Links 
+* https://git-scm.com/docs/git-rebase
+* https://apple.stackexchange.com/questions/337244/homebrew-and-git-wrong-language-on-the-command-line
+* https://stackoverflow.com/questions/14189134/how-to-change-git-from-chinese-to-english-in-mac
