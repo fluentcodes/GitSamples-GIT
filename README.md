@@ -18,11 +18,11 @@ result:
 ### patch
 To apply the patch to the current branch, we use git am and pass in the name of the patch we want to apply.
 
-    git -am 0001-A-init.patch
+    git am 0001-A-init.patch
 
 It return just one line:
 
-    Wende an: A: init
+    Applying: A: init
 
 The history is not so nice,
 
@@ -30,15 +30,13 @@ The history is not so nice,
 
 since we have our readme commit: But the we have our file again in the branch.
 
-    2bbf142 A: init
-    d0cb463 Adopt 0001-A-init.patch
-    8120307 B: init
+    5ae1720 A: init
+    c87a678 patch-apply-B-patchA
+    581b552 B: init
     e97f76f master: init
 
 ### Related Branches
-* [patchA](../../tree/patchA)
-* [patchB](../../tree/patchB)
-* [patchAB](../../tree/patchAB)
+* [patch-format-AB-patchA](../../tree/patch-format-AB-patchA)
 
 ### Links
 * https://git-scm.com/docs/git-format-patch
