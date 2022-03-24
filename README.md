@@ -1,6 +1,6 @@
-### [GitSamples-GIT](../../tree/master): Cherrypick D from FEDCBA onto A
+### [GitSamples-GIT](../../tree/master): Cherry-pick D from FEDCBA onto A
 
-Here we will pick branch **D** from branch **FEDCBA**
+Here we will pick branch **D** from branch **FEDCBA** and add it to the branch A.
 
 #### prepare
     git checkout A
@@ -25,9 +25,29 @@ we can select D
     5048e61 A: init
     e97f76f master: init
 
-with a has of 0ded26b
+with a commit hash of "0ded26b"
+
+#### cherry-pick
+
+When applying the commit from FEDCBA
+
+    git cherry-pick 0ded26b 
+
+we have the file D into our branch. We could also use the full hash 0ded26b96a8edeac820f6d90682a666ac62e622d.
+
+    git log --oneline
+
+results
+
+    546c971 D: init
+    ac2bac9 cherrypick-FEDCBA-D-onto-A:init
+    882f49d A: init
+    e97f76f master: init
+
+
 #### Related Branches
 * [rebase-FEDCBA](../../tree/rebase-DCBA)
 
 #### Links 
 * https://git-scm.com/docs/git-cherry-pick
+* https://mijingo.com/blog/using-git-cherry-pick
