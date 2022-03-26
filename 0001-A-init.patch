@@ -1,0 +1,21 @@
+From 2cb88adbca339657df0b8d9df666edc56c3c809b Mon Sep 17 00:00:00 2001
+From: WerDiw <werner.diwischek@witt-gruppe.eu>
+Date: Thu, 24 Mar 2022 06:10:23 +0100
+Subject: [PATCH] A: init
+
+---
+ fileA | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fileA
+
+diff --git a/fileA b/fileA
+new file mode 100644
+index 0000000..8c7e5a6
+--- /dev/null
++++ b/fileA
+@@ -0,0 +1 @@
++A
+\ No newline at end of file
+-- 
+2.11.0
+
