@@ -1,14 +1,16 @@
-## GitSamples-GIT Topic Branch: master
+## GitSamples-GIT: master
 
-The topic branches you find in this GitSamples repository contains some hands on examples for simple git operations.
+The Topic ranches you find in this GitSamples repo contains some hands on examples for simple git operations.
 
 It shows the concept of GitSamples: Using git branches not only temporarily but as permanent space for scenarios with 
-working examples in a certain environment with markdown documentation as a space to document, contribute and share.
+working examples in a certain environment with markdown documentation.
+
+A space to experiment, document and share.
 
 ### Gitsample Evaluations
-* [automate-Git](/../../tree/automate-git): Aliases for simplify git shell work.
-* [github-readme-links](/../../tree/github-readme-links): The strange behaviour of markdown links in Github.
-* [switch-orphan-readme](/../../tree/switch-orphan-readme): Some investigation to create new topic branches with a "clean" history.
+* [automate-git](/../../tree/automate-git): Aliases for simplify git shell work.
+* [github-readme-links](/../../tree/github-readme-links): Examines the strange behaviour of markdown directory links in Github.
+* [switch-orphan-readme](/../../tree/switch-orphan-readme): How to create new topic branches with a "clean" history.
 
 
 ### Merge
